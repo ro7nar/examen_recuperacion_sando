@@ -8,10 +8,10 @@ public class Estudiantes extends MainSistema {
 	//Notas
 	
 	public String colegio;
-	public String fechaCumpleaños;
+	public String fechaCumpleanos;
 	//discapacidad
 	public String discapacidad;
-	public int recursos;
+	public String codigoConadis;
 	//recursos
 	public String beneficios;
 	public int salirioPadres;
@@ -42,11 +42,13 @@ public class Estudiantes extends MainSistema {
 	public void setColegio(String colegio) {
 		this.colegio = colegio;
 	}
-	public String getFechaCumpleaños() {
-		return fechaCumpleaños;
+
+	
+	public String getFechaCumpleanos() {
+		return fechaCumpleanos;
 	}
-	public void setFechaCumpleaños(String fechaCumpleaños) {
-		this.fechaCumpleaños = fechaCumpleaños;
+	public void setFechaCumpleanos(String fechaCumpleanos) {
+		this.fechaCumpleanos = fechaCumpleanos;
 	}
 	public String getDiscapacidad() {
 		return discapacidad;
@@ -54,14 +56,14 @@ public class Estudiantes extends MainSistema {
 	public void setDiscapacidad(String discapacidad) {
 		this.discapacidad = discapacidad;
 	}
-	public int getRecursos() {
-		return recursos;
-	}
-	public void setRecursos(int recursos) {
-		this.recursos = recursos;
-	}
 
 	
+	public String getCodigoConadis() {
+		return codigoConadis;
+	}
+	public void setCodigoConadis(String codigoConadis) {
+		this.codigoConadis = codigoConadis;
+	}
 	public String getBeneficios() {
 		return beneficios;
 	}

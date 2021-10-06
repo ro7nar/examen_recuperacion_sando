@@ -93,7 +93,12 @@ public class MainSistema {
 					System.out.println("Ingrese codigo colegio");
 					String codigoColegio = teclado.nextLine(); 
 					System.out.println("Ingrese fecha de cumpleaños");
-					int fechaCumpleaños = lector.nextInt(); 
+					String fechaCumpleanos = lector.nextLine(); 
+					nuevoEstuadinte.setCodigoBeca(codigoBeca);
+					nuevoEstuadinte.setNombre(nombre);
+					nuevoEstuadinte.setApellido(apellido);
+					nuevoEstuadinte.setColegio(codigoColegio);
+					nuevoEstuadinte.setFechaCumpleanos(fechaCumpleanos);
 				}else if(opcion2 == 2) {
 					System.out.println("Ingrese Codigo de beca");
 					codigoBeca = teclado.nextLine(); 
@@ -105,7 +110,11 @@ public class MainSistema {
 					String codigoConadis = teclado.nextLine(); 
 					System.out.println("Ingrese discapacidad");
 					String discapacidad = teclado.nextLine();
-					
+					nuevoEstuadinte.setCodigoBeca(codigoBeca);
+					nuevoEstuadinte.setNombre(nombre);
+					nuevoEstuadinte.setApellido(apellido);
+					nuevoEstuadinte.setCodigoConadis(codigoConadis);
+					nuevoEstuadinte.setDiscapacidad(discapacidad);
 				}else if(opcion2 == 3) {
 					System.out.println("Ingrese Codigo de beca");
 					codigoBeca = teclado.nextLine(); 
@@ -117,10 +126,18 @@ public class MainSistema {
 					String codigoBenficio = teclado.nextLine(); 
 					System.out.println("Ingrese salario de los Padres");
 					int salarioPadres = lector.nextInt(); 
+					nuevoEstuadinte.setCodigoBeca(codigoBeca);
+					nuevoEstuadinte.setNombre(nombre);
+					nuevoEstuadinte.setApellido(apellido);
+					nuevoEstuadinte.setBeneficios(codigoBenficio);
+					nuevoEstuadinte.setSalirioPadres(salarioPadres);
 					
 				}else {
 					System.out.println("No existe esa Opcion");
 				}
+				
+				
+				
 				
 				
 				lsitaEstudiantes[i] = nuevoEstuadinte;
